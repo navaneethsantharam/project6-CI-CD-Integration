@@ -77,6 +77,8 @@ Command used-
 "locust -f locust.py --host https://flask-ml-service.azurewebsites.net:443 --autostart --users 50 --spawn-rate 5 --run-time 30 --autoquit 5"
 ![10_Locust_test](https://user-images.githubusercontent.com/108083391/192244695-d0bed286-a7e0-4c0c-9cf3-54e1726db61e.jpg)
 
+* Status badge for Azure Pipeline
+[![Build Status](https://dev.azure.com/odluser208915/Flask-ML-Deploy/_apis/build/status/navaneethsantharam.project6-CI-CD-Integration?branchName=main)](https://dev.azure.com/odluser208915/Flask-ML-Deploy/_build/latest?definitionId=1&branchName=main)
 
 ## Enhancements
 
