@@ -18,7 +18,7 @@ Project Plan
 Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
 * Project running on Azure App Service
-![18_Project running on app service](https://user-images.githubusercontent.com/108083391/192157075-e290d503-bef0-4d3d-a21b-d10bc3d6b2bc.jpg)
+![7_Creating_app_service_and_deploying_flask](https://user-images.githubusercontent.com/108083391/192241707-f25ea326-393a-42a4-9dd7-3c04e42536b6.jpg)
 
 
 * Project cloned into Azure Cloud Shell
@@ -40,42 +40,43 @@ Instructions for running the Python project.  How could a user with no context r
 [![Python application test with Github Actions](https://github.com/navaneethsantharam/project6-CI-CD-Integration/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/navaneethsantharam/project6-CI-CD-Integration/actions/workflows/pythonapp.yml)
 
 
+* Running flask application locally
+![4_Local_flask_run](https://user-images.githubusercontent.com/108083391/192236472-c55a82fc-ed27-4241-8d96-a06da3a6eb9f.jpg)
+
+
 * Output of a test run
-![2_App_running_from_cloudshell](https://user-images.githubusercontent.com/108083391/192156905-a9854d00-3900-4f3d-a74d-c9ed6e0f2eb5.jpg)
+![5_local_flask_output](https://user-images.githubusercontent.com/108083391/192236493-77973093-ad0d-4c96-83d2-95450e1f5d5f.jpg)
 
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
-![13_Build Job Success](https://user-images.githubusercontent.com/108083391/192156820-4fbdcd28-e54e-4840-b6d4-9d8ba8918931.jpg)
-![14_Deploy Job Success](https://user-images.githubusercontent.com/108083391/192156816-ff33c82d-769e-4599-9f7e-6148639c49d9.jpg)
+![12_Build_Success](https://user-images.githubusercontent.com/108083391/192246469-13a218e0-c3b9-4ca6-9ecc-7eff6eb010de.jpg)
+![13_Deploy_Success](https://user-images.githubusercontent.com/108083391/192246811-9095de20-854d-4a0e-8fb8-3a5cf7b78ed5.jpg)
 
 
 * Running Azure App Service from Azure Pipelines automatic deployment
-![12_Running the Azure Pipeline](https://user-images.githubusercontent.com/108083391/192156808-6f1b6717-5ff4-47f3-91bb-8ee412196bf3.jpg)
+![14_Azure_pipeline_Success](https://user-images.githubusercontent.com/108083391/192246922-92ac3c05-02fe-45bf-a414-dfec2715d514.jpg)
 
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
-![3_Getting_predictions_from_local](https://user-images.githubusercontent.com/108083391/192156804-d7ffa418-74be-4321-a195-c7b9d364fb34.jpg)
-
 ```bash
 udacity@Azure:~$ ./make_predict_azure_app.sh
 Port: 443
 {"prediction":[20.35373177134412]}
 ```
-![17_Successfull prediction from app service](https://user-images.githubusercontent.com/108083391/192156792-ac78803f-c5ae-4672-bc0a-d461e46ee6cd.jpg)
+![8_Test the app service output prediction](https://user-images.githubusercontent.com/108083391/192241636-3b238f59-db62-47cd-9141-405653609df4.jpg)
 
 
 * Output of streamed log files from deployed application
-![16_Log Stream](https://user-images.githubusercontent.com/108083391/192156987-6963a25d-c607-4e81-9d42-bd806e2a238f.jpg)
+![11_log_stream](https://user-images.githubusercontent.com/108083391/192245109-d57dc975-76c1-44e9-a1a7-339dfc65363f.jpg)
 
 
 * Load testing done using Locust. Locust.py has the code to invoke the test scenario for API performance
 
 Command used-
 "locust -f locust.py --host https://flask-ml-service.azurewebsites.net:443 --autostart --users 50 --spawn-rate 5 --run-time 30 --autoquit 5"
-![15_Locust_tested_from_cloud_shell](https://user-images.githubusercontent.com/108083391/192157019-6e41f51a-e33b-466d-b249-2c50eeb83559.jpg)
+![10_Locust_test](https://user-images.githubusercontent.com/108083391/192244695-d0bed286-a7e0-4c0c-9cf3-54e1726db61e.jpg)
 
-> 
 
 ## Enhancements
 
