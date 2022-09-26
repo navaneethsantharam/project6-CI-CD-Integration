@@ -22,11 +22,23 @@ Instructions for running the Python project.  How could a user with no context r
 
 
 * Project cloned into Azure Cloud Shell
-![19_Git_project_cloned_in_cloud_shell](https://user-images.githubusercontent.com/108083391/192157131-4667f61b-0a7e-47ae-91d0-ef59d14aee7b.jpg)
+![1_git_clone](https://user-images.githubusercontent.com/108083391/192231828-715571c7-5400-405f-bdec-d33e2c371f44.jpg)
 
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
-![1_make_all_in_cloud_shell](https://user-images.githubusercontent.com/108083391/192156901-cd4e7dd7-c53d-4385-878e-2c58556103ad.jpg)
+![2_make_all](https://user-images.githubusercontent.com/108083391/192231926-70cdcd5b-cf50-43df-9ce6-4108b630e669.jpg)
+![2_make_all_2](https://user-images.githubusercontent.com/108083391/192231951-7cc9aa21-8885-49d7-8f61-48c0ea8ca07c.jpg)
+
+
+* Enabling git actions and testing for build success on commit
+![3_git_action_build](https://user-images.githubusercontent.com/108083391/192235456-10606ba1-ffe7-4da1-916c-9e2e0164ed7a.jpg)
+
+
+* Status badge for git actions
+
+
+[![Python application test with Github Actions](https://github.com/navaneethsantharam/project6-CI-CD-Integration/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/navaneethsantharam/project6-CI-CD-Integration/actions/workflows/pythonapp.yml)
+
 
 * Output of a test run
 ![2_App_running_from_cloudshell](https://user-images.githubusercontent.com/108083391/192156905-a9854d00-3900-4f3d-a74d-c9ed6e0f2eb5.jpg)
@@ -57,7 +69,7 @@ Port: 443
 ![16_Log Stream](https://user-images.githubusercontent.com/108083391/192156987-6963a25d-c607-4e81-9d42-bd806e2a238f.jpg)
 
 
-*Load testing done using Locust. Locust.py has the code to invoke the test scenario for API performance
+* Load testing done using Locust. Locust.py has the code to invoke the test scenario for API performance
 
 Command used-
 "locust -f locust.py --host https://flask-ml-service.azurewebsites.net:443 --autostart --users 50 --spawn-rate 5 --run-time 30 --autoquit 5"
