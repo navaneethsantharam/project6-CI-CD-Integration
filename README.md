@@ -7,7 +7,8 @@ A flask application has been built with an endpoint /predict. The endpoint takes
 Project Plan
 
 * A link to a Trello board for the project @ https://trello.com/b/59QIvgTv/ci-cd-project-6-plan
-* A link to a spreadsheet that includes the original and final project plan @ [project-management-template.xlsx](https://github.com/navaneethsantharam/flask-ml-service-with-azuredevops/files/9641407/project-management-template.xlsx)
+* A link to a spreadsheet that includes the original and final project plan @ [project-management-template.xlsx](https://github.com/navaneethsantharam/project6-CI-CD-Integration/files/9646423/project-management-template.xlsx)
+
 
 ## Instructions
 
@@ -75,6 +76,12 @@ Port: 443
 
 Command used-
 "locust -f locust.py --host https://flask-ml-service.azurewebsites.net:443 --autostart --users 50 --spawn-rate 5 --run-time 30 --autoquit 5"
+
+From UI
+![15_locus_test_local_host](https://user-images.githubusercontent.com/108083391/192281605-2a62b2e6-4f5f-4995-b5a1-0746f2b25830.jpg)
+
+
+From Cloudshell
 ![10_Locust_test](https://user-images.githubusercontent.com/108083391/192244695-d0bed286-a7e0-4c0c-9cf3-54e1726db61e.jpg)
 
 * Status badge for Azure Pipeline
